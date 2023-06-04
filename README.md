@@ -1,1 +1,0 @@
-This project aims to ...to be ctd.
