@@ -33,7 +33,24 @@ WHY THE LAYERS?
 
  example, in number 8, we have two 0s (circle like), so here , the first layer will detect all the neurons
  the 2nd layer will decide the edges
- the 3rd layer will recognize, that those edgy imperfect figure most probably represents 
+ the 3rd layer will recognize, that those edgy imperfect figure most probably represents two 0s pattern
+ the final layer will recognize , what those two 0s pattern might form , (here 8)
+
+ Wights are the like the knobs, that tie up the neurons from one layer to another
+ while Biases, are the base of neuron activation (condition type)
+ (example, the pixel will turn on if the activation value is something)
+
+
+ Activation number of first layer's first neuron = a0^(0)
+ Second layer's first neuron = a0^(1)
+ First layer's second neuron = a1^(0)
+and so on..
+
+Weight of first layer's 2nd member = W 0,1
+
+a0^(1) = σ [ (W 0,0 * a0^0) + (W 0,1 * a0^1) +.........+  (W 0,n  * a0^n) ]
+
+n = layer 
 
 
 
