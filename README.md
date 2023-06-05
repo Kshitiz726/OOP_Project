@@ -19,3 +19,21 @@ last neuron layer ma, 10 ota neuron huncha, 0 to 9, manam , eti mero, 5 ko activ
 
 in our project, we will use two neuron layers with 16 neurons in each
 
+network operates such that, activation in one layer impacts the activation in another layer
+
+
+WHY THE LAYERS?
+ first layer of neuron ma , lights on ko activation huncha //first layer
+
+ ////second layer///// first layer ko  activation le 2nd  neuron layer ma impact garcha, ra, edges kun type ho vanne vancha
+
+ //third layer// 2nd ko kunai edges combine garda, pattern bancha, ra tyo pattern ko certain activation bata decide huncha, kun pattern ho vanne (junko activation high huncha, tei pattern ho)
+
+ //last layer/// last layer ma , tyo pattern (here , 2) ko activation le influence garda, kun activation high huncha (0 to 9), tei nai mero number ho
+
+ example, in number 8, we have two 0s (circle like), so here , the first layer will detect all the neurons
+ the 2nd layer will decide the edges
+ the 3rd layer will recognize, that those edgy imperfect figure most probably represents 
+
+
+
