@@ -100,3 +100,7 @@ Output = 1 number (the cost)
 Parameters = many training examples
 
 ///BACK PROPAGATION//////
+Back propagation is the algorithm to determine how a single training example would like to nudge(ghataune or badaune) the weights and biases
+not just in terms of whether they should go up or down , but in terms of what relative proportions to those changes cause the most rapid decrease to the cost
+
+//MINI BATCHES////
