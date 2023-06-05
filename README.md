@@ -88,6 +88,8 @@ Our goal is to find the input that minimises the value of cost (that means, make
 ///GRADIENT DESCENT//////
 way to find input for which cost function is minimum
 
+gradient descent chai, slow huncha, so , kunai fast algorithm choose garnuparcha
+
 ///NEURAL NETWORK FUNCTIONS///
 
 input = 784 numbers (pixels)
@@ -103,4 +105,13 @@ Parameters = many training examples
 Back propagation is the algorithm to determine how a single training example would like to nudge(ghataune or badaune) the weights and biases
 not just in terms of whether they should go up or down , but in terms of what relative proportions to those changes cause the most rapid decrease to the cost
 
-//MINI BATCHES////
+/////MINI BATCHES GRADIENT DESCENT////
+dividing the data into bulks, like if we have 100 sets, then we take mini batches of 4 , to get batches of 25
+
+/// STOCHASTIC GRADIENT DESCENT///
+cost ghataune euta kindof algorithm
+
+////COST SURFACE////
+complex 3d graph representing the input vs cost function 
+
+//BACK PROPAGATION CALCULUS//
