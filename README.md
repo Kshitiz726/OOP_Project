@@ -7,7 +7,9 @@ each grid is neuron (784 neuurons here )
 each neuron holds anumber , that starts from 0(black pixel) to 1(white pixel)
 this number is called activation
 
-
+network : 
+ simply a function that guides another neuron
+ 
 784 neuron ko first layer huncha
 last layer ma 10 ota neuron matra huncha
 first ra last ko bichma, couple of neurons layer haru huncha (hidden layers)
@@ -25,7 +27,7 @@ network operates such that, activation in one layer impacts the activation in an
 WHY THE LAYERS?
  first layer of neuron ma , lights on ko activation huncha //first layer
 
- ////second layer///// first layer ko  activation le 2nd  neuron layer ma impact garcha, ra, edges kun type ho vanne vancha
+ ////second layer (hidden layer)///// first layer ko  activation le 2nd  neuron layer ma impact garcha, ra, edges kun type ho vanne vancha
 
  //third layer// 2nd ko kunai edges combine garda, pattern bancha, ra tyo pattern ko certain activation bata decide huncha, kun pattern ho vanne (junko activation high huncha, tei pattern ho)
 
@@ -61,3 +63,40 @@ sigma is defined here to compress the activation within 0 to 1
 the equation (i) can be represented by matrix calculation
 (refer to some image "matrix.jpg")
 
+
+784 + (16*16) + (16*10) weights
+16 + 16 + 10 
+
+total of 13022 weight and biases
+
+///////////COST FUNCTION////////
+
+sum of cost difference = summation [(activity gained in all 10 nodes - activity required for accurate decision making in all 10 nodes) ^2 ]
+
+if , sum of cost difference is high, then, most probably the network doesn't classify the number correctly
+if its low, then the network classifies the number confidently and correctly
+
+it just tells how bad the network is in detecting the number 
+
+Input = 13002 wights and biases
+Output = 1 number (the cost)
+Parameters = many training examples
+
+
+Our goal is to find the input that minimises the value of cost (that means, make the network more efficient and confident)
+
+///GRADIENT DESCENT//////
+way to find input for which cost function is minimum
+
+///NEURAL NETWORK FUNCTIONS///
+
+input = 784 numbers (pixels)
+output = 10 numbers
+parameters = 13,002 weights and biases
+
+//COST FUNCTIONS//
+Input = 13002 wights and biases
+Output = 1 number (the cost)
+Parameters = many training examples
+
+///BACK PROPAGATION//////
