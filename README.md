@@ -48,9 +48,16 @@ and so on..
 
 Weight of first layer's 2nd member = W 0,1
 
-a0^(1) = σ [ (W 0,0 * a0^0) + (W 0,1 * a0^1) +.........+  (W 0,n  * a0^n) ]
+a0^(1) = σ [ (W 0,0 * a0^0) + (W 0,1 * a1^0) +.........+  (W 0,n  * a n^0) ] ---(i)
 
-n = layer 
+W induced layer ko kun member? , inducing layer ko kun member?
+a member^(layer)
+
+sigma is defined here to compress the activation within 0 to 1
+
+σ = 1/(1+e^(-x)) function (if we see the graph of this function, on applying very positive input , the result is close to 1, while on applying very negative input, the result is close to 0 ) in this way, the activation is complexed in between 0 and 1
 
 
+the equation (i) can be represented by matrix calculation
+(refer to some image "matrix.jpg")
 
