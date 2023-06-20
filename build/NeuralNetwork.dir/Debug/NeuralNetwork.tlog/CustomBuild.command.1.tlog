@@ -1,0 +1,10 @@
+^C:\USERS\KSHITIZ\DOCUMENTS\GITHUB\OOP_PROJECT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Kshitiz/Documents/GitHub/OOP_Project -BC:/Users/Kshitiz/Documents/GitHub/OOP_Project/build --check-stamp-file C:/Users/Kshitiz/Documents/GitHub/OOP_Project/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
